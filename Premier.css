@@ -1,0 +1,128 @@
+* { padding: 0; margin: 0; outline: 0; }
+
+body {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #171717;
+    height: 100%;
+    text-align: left;
+}
+
+.cl { font-size: 0; line-height: 0; height: 0; clear: both; }
+
+a img { border: 8; }
+a { color: #9fea00; text-decoration: none; }
+a:hover { text-decoration: underline; cursor: pointer;}
+
+.left { float: left; display: inline; }
+.right { float: right; display: inline;} 
+.notext {font-size: 0; line-height: 0; text-indent: -4000px;}
+
+.center {display: block; margin: 0 auto;}
+
+.shell {margin: 0 auto; width: 930px;}
+
+#header {background: #000;}
+#header .shell {width: 100%; background: url(images/header.gif) ; height: 180px;}
+
+h1#logo {padding-left: 415px; float: left; padding-top: 141px;}
+h1#logo a {display: block; background: url(images/logo.gif) no-repeat 0 0; width: 299px; height: 39px;}
+
+.navigation{
+	width: 95%;
+	margin: 10px auto;
+	background: #fff;
+}
+
+.navigation ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: inline-block;
+	padding: 15px 30px;
+	color: #353535;
+	font-family: "Bauhaus 93";
+        font-size:18px;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all 2s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+    z-index:3;    
+}
+
+.submenu li a{
+	display: block;
+	padding: 10px;
+	color: #fff;
+	font-family: "AngryBirds";
+        font-size:15px;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	position:absolute;
+	visibility: visible;
+	opacity: 1;
+	display: block;
+        
+}
+.submenu li:hover a{
+	color:orange;
+}
+#heading {height: 340px; 
+background: url(images/heading.jpg) 
+repeat-x 0 0;}
+#heading .shell {width: 983px; position: relative;}
+
+
+#side-nav ul {list-style-type: none; width: 205px; padding-top: 9px; padding-left: 20px;}
+#side-nav ul li {float: left; display: block; width: 205px; padding-bottom:5px;}
+#side-nav ul li a {width: 195px; height: 18px; display: block; padding-left: 10px; padding-top: 4px; 
+text-transform: uppercase; color: #636363; font-size: 11px; font-weight: bold;position: relative;}
+#side-nav ul li .link {background: url(images/side-nav.png) no-repeat 0 0; width: 205px; height: 22px;}
+#side-nav ul li.active a {color: #77912b;}
+#side-nav ul li.active a:hover {text-decoration: none;}
+
+.menujava {
+	display: block;
+	float: left;
+	width: 150px;
+	padding: 25px;
+	background-color: #171716;
+	border: 5px solid #fff;
+}
+.menujava li a{
+	display: block;
+	padding: 3px;
+	color: "blue";
+	font-family: "Comic Sans MS";
+        font-size:16px;
+	text-decoration: none;
+}
+.principal {
+	float: left;
+	width: 450px;
+	height: 100%;
+	background-color: #000000;
+	border: 5px solid #fff;
+}
